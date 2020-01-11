@@ -1,1 +1,0 @@
-GRANT USAGE ON SCHEMA algamoneyapi TO algamoneyapp;

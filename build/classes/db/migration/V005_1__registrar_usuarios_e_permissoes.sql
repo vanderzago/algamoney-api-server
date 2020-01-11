@@ -1,1 +1,0 @@
-INSERT INTO algamoneyapi.permissao (codigo, descricao) values (9, 'ROLE_REMOVER_CATEGORIA');

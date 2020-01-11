@@ -1,1 +1,0 @@
-alter table algamoneyapi.usuario_permissao add constraint FKeogfr4akeqn19xr3wmyx0n8bo foreign key (codigo_usuario) references algamoneyapi.usuario;
