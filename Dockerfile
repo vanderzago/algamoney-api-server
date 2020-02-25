@@ -12,4 +12,4 @@ COPY build/classes/application-docker.properties /opt
 
 RUN apk del tzdata
 
-ENTRYPOINT [ "java","-Xdebug","-Xrunjdwp:server=y,transport=dt_socket,address=8081,suspend=n","-jar","-Dspring.config.location=/opt/application-docker.properties","/opt/algamoney-api-0.0.1-SNAPSHOT.jar","--algamoney.origin-permitida=http://localhost:4200"]
+ENTRYPOINT [ "java","-Xdebug","-Xrunjdwp:server=y,transport=dt_socket,address=8081,suspend=n","-jar","-Dspring.config.location=/opt/application-docker.properties","/opt/algamoney-api-0.0.1-SNAPSHOT.jar","--algamoney.origin-permitida=http://localhost:8000"]
