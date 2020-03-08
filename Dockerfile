@@ -13,5 +13,7 @@ COPY build/algamoney-api-0.0.1-SNAPSHOT.jar /opt
 COPY build/classes/application-docker.properties /opt
 COPY sh/ /opt
 
+RUN dos2unix /opt/*.sh
+
 #CMD /opt/init.sh $GRAYLOG_BASIC_AUTH $GRAYLOG_URL $GRAFANA_BASIC_AUTH $GRAFANA_URL $ELASTICSEARCH_URL $FRONT_URL
 CMD /opt/init.sh $FRONT_URL
